@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "book-store-ngrx": {
+    "book-store": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/book-store-ngrx",
+            "outputPath": "dist/book-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,6 +24,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -62,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "book-store-ngrx:build"
+            "browserTarget": "book-store:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "book-store-ngrx:build:production"
+              "browserTarget": "book-store:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "book-store-ngrx:build"
+            "browserTarget": "book-store:build"
           }
         },
         "test": {
@@ -88,6 +91,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -110,15 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "book-store-ngrx:serve"
+            "devServerTarget": "book-store:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "book-store-ngrx:serve:production"
+              "devServerTarget": "book-store:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "book-store-ngrx"
+    }
+  },
+  "defaultProject": "book-store"
 }

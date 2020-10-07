@@ -1,0 +1,11 @@
+<p-orderList class="books" *ngIf="books" [value]="books" [listStyle]="{'height':'auto'}" header="List of History Books">
+  <ng-template let-book pTemplate="item">
+    <div class="book-item">
+      <div class="book-list-detail">
+        <h4 class="p-mb-2">{{book.volumeInfo.title}}</h4>
+        <i class="pi pi-bookmark book-category-icon"></i>
+        <span class="book-category">{{book.volumeInfo.description}}</span>
+      </div>
+    </div>
+  </ng-template>
+</p-orderList>
