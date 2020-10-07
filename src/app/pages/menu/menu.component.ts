@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MenuItem} from "primeng/api";
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-menu',
@@ -11,7 +11,7 @@ export class MenuComponent implements OnInit {
 
   activeItem: MenuItem;
 
-  @ViewChild('menuItems', { static: true }) menu: MenuItem[];
+  @ViewChild('menuItems', {static: true}) menu: MenuItem[];
 
   ngOnInit() {
     this.items = [

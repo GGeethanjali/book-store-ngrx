@@ -1,4 +1,4 @@
-<p-orderList class="books" *ngIf="books" [value]="books" [listStyle]="{'height':'auto'}" header="List of History Books">
+<p-orderList *ngIf="books" [listStyle]="{'height':'auto'}" [value]="books" class="books" header="List of History Books">
   <ng-template let-book pTemplate="item">
     <div class="book-item">
       <div class="book-list-detail">

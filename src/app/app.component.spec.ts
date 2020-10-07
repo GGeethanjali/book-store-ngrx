@@ -1,8 +1,8 @@
 import {TestBed} from '@angular/core/testing';
 import {RouterTestingModule} from '@angular/router/testing';
 import {AppComponent} from './app.component';
-import {MenuComponent} from "./pages/menu/menu.component";
-import {TabMenuModule} from "primeng/tabmenu";
+import {MenuComponent} from './pages/menu/menu.component';
+import {TabMenuModule} from 'primeng/tabmenu';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

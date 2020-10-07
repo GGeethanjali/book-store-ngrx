@@ -1,9 +1,9 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {BookItemComponent} from './book-item.component';
-import {OrderListModule} from "primeng/orderlist";
-import {GoogleBooksService} from "../../services/google-books";
-import {HttpClientTestingModule} from "@angular/common/http/testing";
+import {OrderListModule} from 'primeng/orderlist';
+import {GoogleBooksService} from '../../services/google-books';
+import {HttpClientTestingModule} from '@angular/common/http/testing';
 
 describe('BookItemComponent', () => {
   let component: BookItemComponent;

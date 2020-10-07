@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {HomeComponent} from "./pages/home/home.component";
-import {BookItemComponent} from "./pages/book-item/book-item.component";
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {HomeComponent} from './pages/home/home.component';
+import {BookItemComponent} from './pages/book-item/book-item.component';
 
 const routes: Routes = [
   {
@@ -20,4 +20,5 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}
