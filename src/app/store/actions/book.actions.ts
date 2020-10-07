@@ -6,5 +6,5 @@ export enum BookActionsEnum {
   GetBooksSuccess = '[Book] Get Books Success'
 }
 
-export const getBooks = createAction(BookActionsEnum.GetBooks, props<{ payload: Book[] }>());
+export const getBooks = createAction(BookActionsEnum.GetBooks);
 export const getBooksSuccess = createAction(BookActionsEnum.GetBooksSuccess, props<{ payload: Book[] }>());

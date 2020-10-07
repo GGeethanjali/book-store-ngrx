@@ -13,6 +13,10 @@ import {TabMenuModule} from 'primeng/tabmenu';
 import {HomeComponent} from './pages/home/home.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {OrderListModule} from 'primeng/orderlist';
+import {reducers} from './store/reducers';
+import {APP_EFFECTS} from './store/effects';
+import {EffectsModule} from '@ngrx/effects';
+import {StoreModule} from '@ngrx/store';
 
 
 @NgModule({
@@ -30,7 +34,14 @@ import {OrderListModule} from 'primeng/orderlist';
     LayoutModule,
     TabMenuModule,
     InputTextModule,
-    OrderListModule
+    OrderListModule,
+    StoreModule.forRoot(reducers, {
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true
+      }
+    }),
+    EffectsModule.forRoot(APP_EFFECTS),
   ],
   providers: [
     GoogleBooksService
